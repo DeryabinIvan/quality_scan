@@ -125,7 +125,7 @@ int main(int argc, char** argv) {
 
 	auto images = scanDir(imgDirPath);
 
-	if (images.size() <= numProcessed || numProcessed == 0) {
+	if (images.size() <= numProcessed || numProcessed <= 0) {
 		numProcessed = images.size();
 	} else {
 		//setting up RNG
